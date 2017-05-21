@@ -1,0 +1,128 @@
+<body>
+
+  <nav class="blue darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">MC | Movie Critic</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="http://irudi.me" target="_blank">IRUDI.ME</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="http://irudi.me" target="_blank">IRUDI.ME</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text text-darken-4">{{ $ctrl.hello }}</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">See what IRUDI thinks of some movies or simply search a movie to obtain more information about it</h5>
+        <p>controller data:{{$ctrl.dummyList}}</p>
+      </div>
+      <div class="row center">        
+        <div class="input-field">
+        <input type="text" id="search" ng-model="search" >
+        <label for="search">Search</label>
+        </div>
+
+        <div ng-show="search.length > 2">
+          <ul>
+            <li ng-repeat="movie in $ctrl.dummyList | filter: search">
+            <h4>Movie details</h4>
+            <p>Title: {{movie.title}}</p>            
+            <p>About: {{movie.about}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue darken-4 white-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">It's fast</h5>
+
+            <p class="light">Simply make your search on every movie ever made* and see the results come back in a jiffy!</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue darken-4 white-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">It's for everyone</h5>
+
+            <p class="light">No membership needed so tell your friends and family about it and start searching away. Now you too can be a movie critic.**</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue darken-4 white-text "><i class="material-icons">settings</i></h2>
+            <h5 class="center">It's easy</h5>
+
+            <p class="light">It couldn't be easier! Just start making an entry in our search area above.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Lorem Ipsum</h5>
+          <p class="grey-text text-lighten-4">Donec blandit lacinia lacus sed maximus. Quisque gravida accumsan consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus augue nulla, sagittis non maximus sit amet, faucibus eget sapien. Sed eu congue leo. Morbi placerat cursus sapien et condimentum. Nullam at purus porta, feugiat metus et, mattis mauris..</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright  blue darken-2">
+      <div class="container">
+        Made with <a class="blue-text text-darken-4" href="http://materializecss.com">Materialize</a>
+        <br>
+        <span class="small">*Database mainteined by OMDb API, subject to that service.</span>
+        <br>
+        <span class="small">** Future feature to create a critic account and make your own review!</span>
+      </div>
+    </div>
+  </footer>
+
+
+</body>

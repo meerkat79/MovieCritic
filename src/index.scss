@@ -1,0 +1,23 @@
+body {
+  background-color: lightgrey;
+}
+
+.small {
+	font-size: 0.75em;
+}
+
+/*Material over-writes*/
+
+.material-icons {
+	font-size: 2em;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
