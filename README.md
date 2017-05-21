@@ -9,10 +9,11 @@
 
 
 For local use:
-* Clone the repository
-* NPM install to set up project once cloned
-* gulp serve to run developer build
-* gulp build to create distribution build
+
+1.  Clone the repository
+1.  NPM install to set up project once cloned
+1.  gulp serve to run developer build
+1.  gulp build to create distribution build
 
 
 ### Who do I talk to? ###
