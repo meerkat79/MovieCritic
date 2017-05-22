@@ -1,9 +1,11 @@
-import {movieService} from './services/moviedb';
+import {MovieService} from './services/movie-service';
 
 export const dashboard = {
   template: require('./dashboard.html'),
-  controller() {
+  controller($log) {
+    this.$log = $log;
     this.hello = 'Welcome to MovieCritic!';
-    this.dummyList = movieService;
+    this.dummyList = MovieService;
+    $log.log(this.dummyList, 'our movies here');
   }
 };
