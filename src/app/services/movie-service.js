@@ -12,7 +12,7 @@ export const MovieService = [
 //   }
 //   getMovies() {
 //     // $log.log('getMovies has fired');
-//     return this.$http.get('http://beta.json-generator.com/Vyj4LGvaG')
+//     return this.$http.get('http://www.omdbapi.com/?i=tt3896198&apikey=22dccdd7')
 //       .then(getMoviesSuccess)
 //       .catch(getMoviesError);
 
